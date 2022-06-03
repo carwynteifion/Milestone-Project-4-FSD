@@ -56,6 +56,10 @@ body {
     border: 1px solid black !important;
 }
 
+.bg-black {
+    background: #000 !important;
+}
+
 .translucent {
     background-color: rgba(0, 0, 0, 0.5);
 }
