@@ -1,0 +1,52 @@
+[{
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "bookmarks",
+            "friendly_name": "Bookmarks"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "clearance",
+            "friendly_name": "Clearance"
+        }
+    }, {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "deals",
+            "friendly_name": "Deals"
+        }
+    }, {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "e_readers",
+            "friendly_name": "E-Readers"
+        }
+    }, {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "fiction",
+            "friendly_name": "Fiction"
+        }
+    }, {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "new_arrivals",
+            "friendly_name": "New Arrivals"
+        }
+    }, {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "non_fiction",
+            "friendly_name": "Non-Fiction"
+        }
+    }
+]

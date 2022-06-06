@@ -1,0 +1,281 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340155",
+        "name": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "description": "Harry Potter lives in the cupboard under the stairs at his uncle and aunt's house at number four, Privet Drive - until the day when a mysterious letter arrives from Hogwarts School of Witchcraft and Wizardry, and a giant on a flying motorcycle arrives to change his life with four simple words: 'Harry - yer a wizard.'",
+        "price": "4.99",
+        "category": "5",
+        "rating": 4.6,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/513-uMNY0TL._SX321_BO1,204,203,200_.jpg",
+        "image": "hp1.jpg"
+    }
+}, {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340156",
+        "name": "Harry Potter and the Chamber of Secrets",
+        "author": "J.K. Rowling",
+        "description": "With over 150 full-colour illustrations and eight exclusive, interactive paper-engineered elements, readers can travel via the Floo Network, encounter the Whomping Willow, reveal the spiral staircase to Dumbledore's office and even pull Mandrakes from their pots!",
+        "price": "5.99",
+        "category": "5",
+        "rating": 4.7,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/51qTHM32pfL._SX415_BO1,204,203,200_.jpg",
+        "image": "hp2.jpg"
+    }
+}, {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340157",
+        "name": "Harry Potter and the Prisoner of Azkaban",
+        "author": "J.K. Rowling",
+        "description": "Jim Kay's inspired reimagining of J.K. Rowling's classic series has captured a devoted following worldwide. This stunning new fully illustrated edition of Harry Potter and the Prisoner of Azkaban brings more breathtaking scenes and unforgettable characters - including Sirius Black, Remus Lupin and Professor Trelawney.",
+        "price": "3.99",
+        "category": "5",
+        "rating": 4.4,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/51wJWwU+AFL._SX421_BO1,204,203,200_.jpg",
+        "image": "hp3.jpg"
+    }
+}, {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340158",
+        "name": "Harry Potter and the Goblet of Fire",
+        "author": "J.K. Rowling",
+        "description": "Harry Potter unravels the mystery surrounding the Triwizard Tournament in which he is forced to compete.",
+        "price": "9.99",
+        "category": "5",
+        "rating": 4.9,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/51xY9Rn7GVL._SX314_BO1,204,203,200_.jpg",
+        "image": "hp4.jpg"
+    }
+}, {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340159",
+        "name": "Harry Potter and the Order of the Phoenix",
+        "author": "J.K. Rowling",
+        "description": "Harry rebels against a new regime at Hogwarts, sits his O.W.L. exams, and confronts an elusive Ministry of Magic in his fifth year.",
+        "price": "5.99",
+        "category": "5",
+        "rating": 4.6,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/51KGXENR4zL._SY498_BO1,204,203,200_.jpg",
+        "image": "hp5.jpg"
+    }
+}, {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340160",
+        "name": "Harry Potter and the Half-Blood Prince",
+        "author": "J.K. Rowling",
+        "description": "Harry and Dumbledore embark on an adventure beyond Hogwarts to destroy Voldemort's Horcruxes.",
+        "price": "4.99",
+        "category": "5",
+        "rating": 4.8,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/51o08nOsolL._SX327_BO1,204,203,200_.jpg",
+        "image": "hp6.jpg"
+    }
+}, {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340161",
+        "name": "Harry Potter and the Deathly Hallows",
+        "author": "J.K. Rowling",
+        "description": "Harry Potter is preparing to leave the Dursleys and Privet Drive for the last time. But the future that awaits him is full of danger, not only for him, but for anyone close to him - and Harry has already lost so much. Only by destroying Voldemort's remaining Horcruxes can Harry free himself and overcome the Dark Lord's forces of evil.",
+        "price": "5.99",
+        "category": "5",
+        "rating": 4.8,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/61UFIKzmKLL._SX321_BO1,204,203,200_.jpg",
+        "image": "hp7.jpg"
+    }
+}, {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340162",
+        "name": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "description": "Bilbo Baggins enjoys a quiet and contented life, with no desire to travel far from the comforts of home. Then one day the wizard Gandalf and a band of dwarves arrive unexpectedly and enlist his services—as a burglar—on a dangerous expedition to raid the treasure-hoard of Smaug the dragon. Bilbo's life is never to be the same again.",
+        "price": "7.99",
+        "category": "5",
+        "rating": 4.6,
+        "image_url": "https://m.media-amazon.com/images/I/51Rc4JYXpSL.jpg",
+        "image": "hobbit.jpg"
+    }
+}, {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340163",
+        "name": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "description": "Sauron, the Dark Lord, has gathered to him all the Rings of Power, the means by which he intends to rule Middle-earth. All he lacks in his plans for dominion is the One Ring, the ring that rules them all, which has fallen into the hands of the hobbit, Bilbo Baggins.",
+        "price": "17.99",
+        "category": "5",
+        "rating": 4.6,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41t9lnhXuFL._SX330_BO1,204,203,200_.jpg",
+        "image": "lotr.jpg"
+    }
+}, {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340164",
+        "name": "The Selfish Gene",
+        "author": "Richard Dawkins",
+        "description": "The Selfish Gene is a classic exposition of evolutionary thought. In it Professor Dawkins articulates a gene's eye view of evolution - a view giving centre stage to these persistent units of information, and in which organisms can be seen as vehicles for the replication of genes. The book provoked widespread and heated debate, which in part led Dawkins to write The Extended Phenotype, in which he gave a deeper clarification of the central concept of the gene as the unit of selection, as well as contributing his own development of this insight.",
+        "price": "7.99",
+        "category": "7",
+        "rating": 4.2,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/514arIoiQ6L._SX327_BO1,204,203,200_.jpg",
+        "image": "dawkins.jpg"
+    }
+}, {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340165",
+        "name": "A Brief History of Time",
+        "author": "Stephen Hawking",
+        "description": "Was there a beginning of time? Could time run backwards? Is the universe infinite or does it have boundaries? These are just some of the questions considered in the internationally acclaimed masterpiece by the world-renowned physicist Professor Stephen Hawking.",
+        "price": "11.99",
+        "category": "7",
+        "rating": 4.8,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41cSPjeu2TL._SX382_BO1,204,203,200_.jpg",
+        "image": "hawking.jpg"
+    }
+}, {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340166",
+        "name": "The 5 Love Languages: The Secret to Love that Lasts",
+        "author": "Gary Chapman",
+        "description": "Falling in love is easy. Staying in love--that's the challenge. How can you keep your relationship fresh and growing amid the demands, conflicts, and just plain boredom of everyday life?",
+        "price": "8.99",
+        "category": "7",
+        "rating": 4.3,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41wfLB9cycL._SX323_BO1,204,203,200_.jpg",
+        "image": "chapman.jpg"
+    }
+}, {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340167",
+        "name": "The Adventures of Sherlock Holmes",
+        "author": "Sir Arthur Conan Doyle",
+        "description": "The Adventures of Sherlock Holmes is a collection of twelve short stories by Arthur Conan Doyle, first published on 14 October 1892. It contains the earliest short stories featuring the consulting detective Sherlock Holmes, which had been published in twelve monthly issues of The Strand Magazine from July 1891 to June 1892.",
+        "price": "8.99",
+        "category": "6",
+        "rating": 4.6,
+        "image_url": "https://images-eu.ssl-images-amazon.com/images/I/41fqfwTqojL._SX218_BO1,204,203,200_QL40_ML2_.jpg",
+        "image": "holmes.jpg"
+    }
+}, {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340168",
+        "name": "E-Reader",
+        "author": "",
+        "description": "Read all your favourite titles digitally with this space-saving e-reader.",
+        "price": "49.99",
+        "category": "4",
+        "rating": 4.5,
+        "image_url": "https://thumbs.dreamstime.com/b/ereader-tablet-computer-28163143.jpg",
+        "image": "ereader.jpg"
+    }
+}, {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340169",
+        "name": "Great Expectations",
+        "author": "Charles Dickens",
+        "description": "Considered by many to be Dickens' finest novel, Great Expectations traces the growth of the book's narrator, Philip Pirrip (Pip), from a boy of shallow dreams to a man with depth of character. From its famous dramatic opening on the bleak Kentish marshes, the story abounds with some of Dickens' most memorable characters.",
+        "price": "9.99",
+        "category": "2",
+        "rating": 4.5,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/41Dg8tyYtjL._SX324_BO1,204,203,200_.jpg",
+        "image": "dickens.jpg"
+    }
+}, {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340170",
+        "name": "A Child's Christmas in Wales",
+        "author": "Dylan Thomas",
+        "description": "Dylan Thomas's lyrical account of his childhood Christmases in a small Welsh town, featuring wolves, bears, hippos and Mrs Prothero's cat, has become deservedly famous. Beautifully illustrated by award-winning artist Edward Ardizzone, this classic edition is beloved by fans of Thomas's work and a perfect Christmas gift for young readers building their own childhood Christmas memories.",
+        "price": "6.99",
+        "category": "3",
+        "rating": 4.4,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/61oqiHorbAL._SX390_BO1,204,203,200_.jpg",
+        "image": "dylan.jpg"
+    }
+}, {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340171",
+        "name": "Pink Bookmark",
+        "author": "",
+        "description": "Never lose your place in a book ever again with this bookmark. Be the envy of all your friends!",
+        "price": "0.99",
+        "category": "1",
+        "rating": 5.0,
+        "image_url": "https://media.istockphoto.com/vectors/template-design-vector-for-paper-bookmarks-isolated-on-white-vector-id1311447327?b=1&k=20&m=1311447327&s=612x612&w=0&h=qHxHu23PJnL0YZD989hiZ17CP8xEjlFh8DC3s1L0fGA=",
+        "image": "bookmark.jpg"
+    }
+}, {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340172",
+        "name": "The Odyssey",
+        "author": "Homer",
+        "description": "The epic tale of Odysseus and his ten-year journey home after the Trojan War forms one of the earliest and greatest works of Western literature. Confronted by natural and supernatural threats - shipwrecks, battles, monsters and the implacable enmityof the sea-god Poseidon - Odysseus must test his bravery and native cunning to the full if he is to reach his homeland safely and overcome the obstacles that, even there, await him.",
+        "price": "12.99",
+        "category": "2",
+        "rating": 4.9,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/51ZA0bML8qL._SX323_BO1,204,203,200_.jpg",
+        "image": "odyssey.jpg"
+    }
+}, {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340173",
+        "name": "The Iliad",
+        "author": "Homer",
+        "description": "The Iliad is the first and the greatest literary achievement of Greek civilization - an epic poem without rival in the literature of the world, and the cornerstone of Western culture. The story centres on the critical events in the last year of the Trojan War, which lead to Achilleus' killing of Hektor and determine the fate of Troy. But Homer's theme is not simply war or heroism. With compassion and humanity, he presents a universal and tragic view of the world, of human life lived under the shadow of suffering and death, set against a vast and largely unpitying divine background.",
+        "price": "4.99",
+        "category": "3",
+        "rating": 4.8,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/51ABgsut3VL._SX308_BO1,204,203,200_.jpg",
+        "image": "iliad.jpg"
+    }
+}, {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340174",
+        "name": "The Disaster Artist",
+        "author": "Greg Sestero",
+        "description": "Greg Sestero writes of his time filming The Room, the best worst movie ever made, directed by his best friend, eccentric director and self-described vampire Tommy Wiseau.",
+        "price": "7.99",
+        "category": "6",
+        "rating": 4.4,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/51UzCa+NqZL._SX328_BO1,204,203,200_.jpg",
+        "image": "greg.jpg"
+    }
+}]
