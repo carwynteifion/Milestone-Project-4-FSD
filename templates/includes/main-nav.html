@@ -17,9 +17,9 @@
                 Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="books-link">
-                <a href="" class="dropdown-item">Fiction</a>
-                <a href="" class="dropdown-item">Non-Fiction</a>
-                <a href="" class="dropdown-item">All Books</a>
+                <a href="{% url 'products' %}?category=fiction" class="dropdown-item">Fiction</a>
+                <a href="{% url 'products' %}?category=non-fiction" class="dropdown-item">Non-Fiction</a>
+                <a href="{% url 'products' %}?category=fiction,non-fiction" class="dropdown-item">All Books</a>
             </div>
         </li>
 
@@ -28,9 +28,9 @@
                 Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
-                <a href="" class="dropdown-item">Bookmarks</a>
-                <a href="" class="dropdown-item">E-readers</a>
-                <a href="" class="dropdown-item">All Accessories</a>
+                <a href="{% url 'products' %}?category=bookmarks" class="dropdown-item">Bookmarks</a>
+                <a href="{% url 'products' %}?category=e_readers" class="dropdown-item">E-readers</a>
+                <a href="{% url 'products' %}?category=bookmarks,e_readers" class="dropdown-item">All Accessories</a>
             </div>
         </li>
 
@@ -39,10 +39,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
