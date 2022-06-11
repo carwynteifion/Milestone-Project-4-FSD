@@ -12,24 +12,22 @@
 {% block content %}
     <div class="container h-100">
         <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-white font-weight-bold translucent">
+            <div class="col-12 my-auto text-center">
+                <h1 class="display-4 logo-font text-white font-weight-bold translucent text-center">
                     New books available now!
                 </h1>
                 <div class="my-5">
                     <h4>
-                        <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Browse our Books <i class="fas fa-book"></i></i></a>
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Browse our Books <i class="fas fa-book"></i></i></a>
                     </h4>
                 </div>
             </div>
-            <div class="col-5 col-md-6 my-auto">
-                <div class="translucent">
-                    <h3 class="display-4 text-white font-weight-bold">Sign up to our newsletter</h3>
-                </div>
-                <div class="my-5">
+            <div class="col-12 my-auto">
+                <div class="text-center grey">
                     <form action="" method="post">
-                        <input type="email" placeholder="Enter your email here">
-                        <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Sign up! <i class="fas fa-book-open"></i></a>
+                        <label class="text-white font-weight-bold" for="newsletter" id="newsletter">Sign up to our newsletter </label>
+                        <input name="newsletter" type="email" placeholder="Enter your email here">
+                        <a href="#" class="newsletter-button btn btn-sm rounded-1 text-uppercase py-3">Sign up! <i class="fas fa-book-open"></i></a>
                     </form>
                 </div>
             </div>

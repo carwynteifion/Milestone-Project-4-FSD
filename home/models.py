@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+
+class Subscribers(models.Model):
+    """
+    Model for collecting email addresses
+    from newsletter sign-ups
+    """
+    email = models.CharField(max_length=254)
