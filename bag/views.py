@@ -39,17 +39,17 @@ def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
     quantity = int(request.POST.get('quantity'))
-    size = None
-    if 'product_size' in request.POST:
-        size = request.POST['product_size']
+    format = None
+    if 'product_format' in request.POST:
+        format = request.POST['product_format']
     bag = request.session.get('bag', {})
 
-    if size:
+    if format:
         if quantity > 0:
-            bag[item_id]['items_by_size'][size] = quantity
+            bag[item_id]['items_by_format'][format] = quantity
         else:
-            del bag[item_id]['items_by_size'][size]
-            if not bag[item_id]['items_by_size']:
+            del bag[item_id]['items_by_format'][format]
+            if not bag[item_id]['items_by_format']:
                 bag.pop(item_id)
     else:
         if quantity > 0:
@@ -65,14 +65,14 @@ def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
 
     try:
-        size = None
-        if 'product_size' in request.POST:
-            size = request.POST['product_size']
+        format = None
+        if 'product_format' in request.POST:
+            format = request.POST['product_format']
         bag = request.session.get('bag', {})
 
-        if size:
-            del bag[item_id]['items_by_size'][size]
-            if not bag[item_id]['items_by_size']:
+        if format:
+            del bag[item_id]['items_by_format'][format]
+            if not bag[item_id]['items_by_format']:
                 bag.pop(item_id)
         else:
             bag.pop(item_id)
