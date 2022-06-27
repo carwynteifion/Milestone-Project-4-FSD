@@ -11,8 +11,14 @@
                 {% endif %}
             </p>
         </div>
-        <div class="bag-toast">
-            {% include './toasts/toast.html' %}
-        </div>
+        {% if messages %}
+            {% for message in messages %}
+                {% if "bag" in message.tags %}
+                    <div class="bag-toast">
+                        {% include './toasts/toast.html' %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
     </a>
 </li>

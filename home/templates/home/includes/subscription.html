@@ -1,0 +1,32 @@
+<div class="col-10 offset-1 col-lg-4 offset-lg-4 my-auto text-center translucent">
+    <h3 class="text-white font-weight-bold text-center pt-3">
+        Subscribe to our newsletter!
+    </h3>
+    <form method="POST" action="{% url 'subscribe' %}">
+        {% csrf_token %}
+        <div class="form-group row align-items-center">
+            <div class="col-12">
+                <input type="email" name="email" id="email" placeholder="Enter your email address...">
+                {% if messages %}
+                    {% for message in messages %}
+                        {% if "newsletter" in message.tags %}
+                            <div class="d-flex justify-content-center">
+                                <div class="newsletter-toast">
+                                    {% include 'includes/toasts/toast.html' %}
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class="col-12">
+                <input type="checkbox" name="privacy" id="privacy">
+                <label for="privacy" class="text-white font-weight-bold ">I accept the site's privacy policy.</label>
+            </div>
+            <div class="col-12">
+                <button class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3" type="submit">Sign up <i
+                        class="fas fa-newspaper"></i></button>
+            </div>
+        </div>
+    </form>
+</div>

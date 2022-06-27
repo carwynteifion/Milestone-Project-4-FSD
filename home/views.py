@@ -36,7 +36,7 @@ def subscribe(request):
     duplicate = Subscriber.objects.filter(email=email)
     if not duplicate:
         subscriber.save()
-        messages.success(request, 'Subscribed to newsletter')
+        messages.info(request, 'Subscribed to newsletter', extra_tags='newsletter')
     else:
-        messages.error(request, f'Email {email} is already subscribed to the newsletter')
+        messages.error(request, f'Email {email} is already subscribed to the newsletter', extra_tags='newsletter')
     return redirect(redirect_url)

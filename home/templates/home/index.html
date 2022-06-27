@@ -12,25 +12,8 @@
 {% block content %}
     <div class="container h-100">
         <div class="row h-100">
-            <div class="col-12 my-auto text-center">
-                <h1 class="display-4 logo-font text-white font-weight-bold translucent text-center">
-                    New books available now!
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Browse our Books <i class="fas fa-book"></i></i></a>
-                    </h4>
-                </div>
-            </div>
-            <div class="col-12 my-auto text-center">
-                <form method="POST" action="{% url 'subscribe' %}" >
-                {% csrf_token %}
-                    <input type="email" name="email" id="email" placeholder="Enter your email address here">
-                    <label for="privacy">I accept the site's privacy policy.</label>
-                    <input type="checkbox" name="privacy" id="privacy">
-                    <button type="submit">Sign up!</button>
-                </form>
-            </div>
+            {% include './includes/call-to-action.html' %}
+            {% include './includes/subscription.html' %}
         </div>
     </div>
 {% endblock %}

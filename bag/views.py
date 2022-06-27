@@ -25,20 +25,20 @@ def add_to_bag(request, item_id):
         if item_id in list(bag.keys()):
             if format in bag[item_id]['items_by_format'].keys():
                 bag[item_id]['items_by_format'][format] += quantity
-                messages.success(request, f'Updated format {format.upper()} {product.name} quantity to {bag[item_id]["items_by_format"][format]}')
+                messages.success(request, f'Updated format {format.upper()} {product.name} quantity to {bag[item_id]["items_by_format"][format]}', extra_tags='bag')
             else:
                 bag[item_id]['items_by_format'][format] = quantity
-                messages.success(request, f'Added format {format.upper()} {product.name} to your bag')
+                messages.success(request, f'Added format {format.upper()} {product.name} to your bag', extra_tags='bag')
         else:
             bag[item_id] = {'items_by_format': {format: quantity}}
-            messages.success(request, f'Added format {format.upper()} {product.name} to your bag')
+            messages.success(request, f'Added format {format.upper()} {product.name} to your bag', extra_tags='bag')
     else:
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
-            messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+            messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}', extra_tags='bag')
         else:
             bag[item_id] = quantity
-            messages.success(request, f'Added {product.name} to your bag')
+            messages.success(request, f'Added {product.name} to your bag', extra_tags='bag')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
@@ -57,19 +57,19 @@ def adjust_bag(request, item_id):
     if format:
         if quantity > 0:
             bag[item_id]['items_by_format'][format] = quantity
-            messages.success(request, f'Updated format {format.upper()} {product.name} quantity to {bag[item_id]["items_by_format"][format]}')
+            messages.success(request, f'Updated format {format.upper()} {product.name} quantity to {bag[item_id]["items_by_format"][format]}', extra_tags='bag')
         else:
             del bag[item_id]['items_by_format'][format]
             if not bag[item_id]['items_by_format']:
                 bag.pop(item_id)
-            messages.success(request, f'Removed format {format.upper()} {product.name} from your bag')
+            messages.success(request, f'Removed format {format.upper()} {product.name} from your bag', extra_tags='bag')
     else:
         if quantity > 0:
             bag[item_id] = quantity
-            messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+            messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}', extra_tags='bag')
         else:
             bag.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your bag')
+            messages.success(request, f'Removed {product.name} from your bag', extra_tags='bag')
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
@@ -89,14 +89,14 @@ def remove_from_bag(request, item_id):
             del bag[item_id]['items_by_format'][format]
             if not bag[item_id]['items_by_format']:
                 bag.pop(item_id)
-            messages.success(request, f'Removed format {format.upper()} {product.name} from your bag')
+            messages.success(request, f'Removed format {format.upper()} {product.name} from your bag', extra_tags='bag')
         else:
             bag.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your bag')
+            messages.success(request, f'Removed {product.name} from your bag', extra_tags='bag')
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
 
     except Exception as e:
-        messages.error(request, f'Error removing item: {e}')
+        messages.error(request, f'Error removing item: {e}', extra_tags='bag')
         return HttpResponse(status=500)
