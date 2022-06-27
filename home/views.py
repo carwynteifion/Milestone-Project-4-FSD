@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
+
 from .models import Subscriber
 
 # Create your views here.
@@ -27,9 +29,14 @@ def subscribe(request):
     Adds subscribed user to mailing list
     """
     email = request.POST.get("email")
-    privacy = request.POST.get("privacy")
-    redirect_url = request.POST.get('redirect_url')
+    privacy = request.POST.get("privacy") == "on"
+    redirect_url = "/"
 
     subscriber = Subscriber(email=email, privacy=privacy)
-    subscriber.save()
+    duplicate = Subscriber.objects.filter(email=email)
+    if not duplicate:
+        subscriber.save()
+        messages.success(request, 'Subscribed to newsletter')
+    else:
+        messages.error(request, f'Email {email} is already subscribed to the newsletter')
     return redirect(redirect_url)
