@@ -1,23 +1,27 @@
-<h4>Reviews</h4>
-{% for review in reviews %}
-<div class="card review-card">
-    <div class="card-body">
-        <p><strong>{{ review.name }}</strong> said:</p>
-        <p>{{ review.comment }}</p>
+<div class="row">
+    <div class="col-12 col-md-8 col-lg-4 offset-md-2">
+        <h4>Reviews</h4>
+        {% for review in reviews %}
+        <div class="card review-card">
+            <div class="card-body">
+                <p><strong>{{ review.name }}</strong> said:</p>
+                <p>{{ review.comment }}</p>
+            </div>
+        </div>
+        {% endfor %}
     </div>
+    {% if user.is_authenticated %}
+    <div class="col-12 col-md-8 col-lg-4 offset-md-2 offset-lg-0">
+        <h4>Comment</h4>
+        <form action="{% url 'review' product.id %}" method="post">
+            {% csrf_token %}
+            <textarea name="comment" id="comment" class="form-control" rows="5" placeholder="Comment..."></textarea>
+            <br>
+            <label for="review-privacy">I accept the site's review guidelines</label>
+            <input type="checkbox" name="review-privacy" id="review-privacy">
+            <br>
+            <button class="btn btn-black" type="submit">Review</button>
+        </form>
+    </div>
+    {% endif %}
 </div>
-<br>
-{% endfor %}
-{% if user.is_authenticated %}
-<div>
-    <form action="{% url 'review' product.id %}" method="post">
-        {% csrf_token %}
-        <textarea name="comment" id="comment" cols="60" rows="5" placeholder="Comment..."></textarea>
-        <br>
-        <label for="review-privacy">I accept the site's review guidelines</label>
-        <input type="checkbox" name="review-privacy" id="review-privacy">
-        <br>
-        <button class="btn btn-black" type="submit">Review</button>
-    </form>
-</div>
-{% endif %}
