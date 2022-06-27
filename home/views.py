@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .models import Subscriber
 
 # Create your views here.
 def index(request):
@@ -20,3 +21,15 @@ def error_400(request, exception):
 
 def error_500(request):
     return render(request, "500.html", status=500)
+
+def subscribe(request):
+    """
+    Adds subscribed user to mailing list
+    """
+    email = request.POST.get("email")
+    privacy = request.POST.get("privacy")
+    redirect_url = request.POST.get('redirect_url')
+
+    subscriber = Subscriber(email=email, privacy=privacy)
+    subscriber.save()
+    return redirect(redirect_url)

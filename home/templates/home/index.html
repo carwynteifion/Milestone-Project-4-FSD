@@ -23,9 +23,9 @@
                 </div>
             </div>
             <div class="col-12 my-auto text-center">
-                <form method="POST" action="" >
+                <form method="POST" action="{% url 'subscribe' %}" >
                 {% csrf_token %}
-                    <input type="email" placeholder="Enter your email address here">
+                    <input type="email" name="email" id="email" placeholder="Enter your email address here">
                     <label for="privacy">I accept the site's privacy policy.</label>
                     <input type="checkbox" name="privacy" id="privacy">
                     <button type="submit">Sign up!</button>

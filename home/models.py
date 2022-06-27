@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Subscribers(models.Model):
+class Subscriber(models.Model):
     """
     Model for collecting email addresses
     from newsletter sign-ups
