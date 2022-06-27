@@ -36,3 +36,7 @@ class Review(models.Model):
     email = models.EmailField(max_length=254)
     comment = models.CharField(max_length=500)
     privacy = models.BooleanField()
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True)
+
+    def __str__(self):
+        return self.comment

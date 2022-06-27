@@ -213,6 +213,12 @@ a.category-badge > span.badge:hover {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
+
+    .overlay {
+        width: 100%;
+        left: 0%;
+    }
+
     .header-container {
         padding-top: 116px;
     }
