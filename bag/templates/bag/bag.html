@@ -76,7 +76,7 @@
                                                             </span>
                                                         </button>
                                                     </div>
-                                                    {% if item.product.has_formats %}
+                                                    {% if item.product.is_book %}
                                                         <input type="hidden" name="product_format" value="{{ item.format }}">
                                                     {% endif %}
                                                 </div>

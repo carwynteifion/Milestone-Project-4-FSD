@@ -69,7 +69,7 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for format, quantity in item_data['items_by_format'].items():
+                        for format, quantity in item_data['is_book'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
