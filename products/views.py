@@ -61,7 +61,7 @@ def product_detail(request, product_id):
     """ A view to show individual product details and reviews """
 
     product = get_object_or_404(Product, pk=product_id)
-    reviews = Review.objects.filter(product=product)
+    reviews = Review.objects.filter(product=product).order_by('-timestamp')
     context = {
         'product': product,
         'reviews': reviews,
@@ -77,7 +77,11 @@ def create_review(request, product_id):
     comment = request.POST.get('comment')
     redirect_url = request.POST.get('redirect_url')
 
-    review = Review(name=request.session.user, email="test@example.com",
-        comment=comment, product=product)
-    review.save()
-    return redirect(redirect_url)
+    user = request.user
+    if user.is_authenticated:
+        print(dir(user))
+        review = Review(name=user.username, email=user.email,
+            comment=comment, product=product,
+            privacy=request.POST.get('privacy') == 'on')
+        review.save()
+        return redirect(redirect_url)

@@ -4,7 +4,7 @@
         {% for review in reviews %}
         <div class="card review-card">
             <div class="card-body">
-                <p><strong>{{ review.name }}</strong> said:</p>
+                <p><strong>{{ review.name }}</strong> said: <small class="timestamp">{{ review.timestamp }}</small></p>
                 <p>{{ review.comment }}</p>
             </div>
         </div>
@@ -19,6 +19,7 @@
             <br>
             <label for="review-privacy">I accept the site's review guidelines</label>
             <input type="checkbox" name="review-privacy" id="review-privacy">
+            <input type="hidden" name="redirect_url" value="{{ request.path }}">
             <br>
             <button class="btn btn-black" type="submit">Review</button>
         </form>

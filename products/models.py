@@ -37,6 +37,7 @@ class Review(models.Model):
     comment = models.CharField(max_length=500)
     privacy = models.BooleanField()
     product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True)
+    timestamp = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.comment
