@@ -1,0 +1,22 @@
+Hello {{ order.full_name }},
+
+Thank you for your Bookable order. Please find your order summary below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+Order Total: ${{ order.order_total }}
+Delivery: ${{ order.delivery_cost }}
+Grand Total: ${{ order.grand_total }}
+
+Delivery address:
+{{ order.street_address1 }},
+{{ order.town_or_city }},
+{{ order.country }}
+
+Phone Number: {{ order.phone_number }}
+
+Please contact us at {{ contact_email }} with any queries.
+
+Sincerely,
+
+Bookable
