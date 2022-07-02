@@ -120,18 +120,12 @@ WSGI_APPLICATION = "bookable.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": BASE_DIR / "db.sqlite3",
-#     }
-# }
-
 DATABASES = {
-    "default": dj_database_url.parse("postgres://gemlnnbmszqcpm:d4caed7791678dd345bbe26537545a540fc2e7c5e7d7a091fa17c6fb0d9fbdcd@ec2-3-248-121-12.eu-west-1.compute.amazonaws.com:5432/de8j864gr6jmeq")
-
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
