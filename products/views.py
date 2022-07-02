@@ -90,7 +90,6 @@ def create_review(request, product_id):
 
 def add_product(request):
     """ Add a product to the store """
-<<<<<<< HEAD
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
