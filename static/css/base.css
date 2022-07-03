@@ -51,6 +51,10 @@ body {
     color: black;
 }
 
+.burgundy {
+    color: #800020;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
