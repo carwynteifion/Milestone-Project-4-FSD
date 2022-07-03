@@ -41,14 +41,14 @@ body {
     min-width: 260px;
 }
 
-.newsletter-button {
+.newsletter-button, .btn-black {
     background: black;
     color: white;
 }
 
-.btn-black {
-    background: black;
-    color: white;
+.btn-white {
+    background: white;
+    color: black;
 }
 
 .shop-now-button:hover,
@@ -63,6 +63,10 @@ body {
 
 .text-black {
     color: #000 !important;
+}
+
+.text-white {
+    color: #fff !important;
 }
 
 .border-black {
@@ -210,7 +214,7 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 
-    .display-4.logo-font.text-black {
+    .display-4.logo-font.text-white {
         font-size: 2rem;
     }
 
