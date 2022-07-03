@@ -1,108 +1,327 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+#   [Bookable](https://milestone-project-4-fsd.herokuapp.com/)
 
-Welcome carwynteifion,
+Bookable is an online bookstore selling both fiction and non-fiction books in paperback and hardback formats at competitive prices. It offers deals, sales and clearance events. It also sells other products such as e-readers, as well as their world-renowned pink bookmarks!
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+---
+ 
+## Table of Contents
+1. [**UX**](#ux)
+    - [**User Stories**](#user-stories)
+    - [**Design**](#design)
+        - [**Framework**](#framework)
+        - [**Color Scheme**](#color-scheme)
+        - [**Typography**](#typography)
+    - [**Wireframes**](#wireframes)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+2. [**Features**](#features)
+    - [**Existing Features**](#existing-features)
+    - [**Features Left to Implement**](#features-left-to-implement)
 
-## Gitpod Reminders
+3. [**Technologies Used**](#technologies-used)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+4. [**Testing**](#testing)
+    - [**Automated Testing**](#automated-testing)
+    - [**Manual Testing**](#manual-testing)
+    - [**Validators**](#validators)
+    - [**Compatibility**](#compatibility)
 
-`python3 -m http.server`
+5. [**Deployment**](#deployment)
+    - [**Local Deployment**](#local-deployment)
+    - [**Remote Deployment**](#remote-deployment)
 
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+6. [**Credits**](#credits)
+    - [**Content**](#content)
+    - [**Media**](#media)
+    - [**Code**](#code)
+    - [**Acknowledgements**](#acknowledgements)
 
 ---
 
-Happy coding!
+## UX
+
+This is the final project in my Full-Stack Software Development course with [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/), in the **Full-Stack Frameworks** module.
+
+### User Stories
+
+As a user, I want to be able to:
+
+- Create an account
+- Log into the site
+- Log out of the site
+- Change password
+- Have a profile page
+- Fully edit my profile details
+- View the site's products
+- Have a shopping bag for me to add, remove, view or update quantities of products
+- Check out securely
+- View a summary of my order after purchase
+- View my order history
+- Write a review of a product
+- Sign up to the site's mailing list
+
+As a superuser, I want to be able to:
+
+- Create, edit, update and delete product entries
+
+### Design
+
+The design of the site is based on standard Bootstrap elements, with some aspects altered using some custom CSS. The background image evokes an old library. Products and reviews are displayed as cards to maintain simplicity and readability.
+
+#### Framework
+
+Frameworks used in the project are:
+
+- [Bootstrap 4](https://getbootstrap.com/)
+    - Using the Bootstrap framework allowed for the development of a clean grid-based UI. Minimal effort was needed to edit any default classes.
+- [Django 3.2](https://www.djangoproject.com/)
+    - Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+- [jQuery 3.4.1](https://code.jquery.com/jquery/)
+    - jQuery simplifies JavaScript to make scripting easier and faster in projects.
+
+#### Colour Scheme
+
+Rustic colours have been used to evoke an old library style. To ensure readability across the site, a white background has been maintained in content-heavy areas such as the products pages.
+
+#### Typography
+
+The primary fonts used on the site are those provided by the Bootstrap framework and the Google font [Lato](https://fonts.google.com/specimen/Lato).
+
+### Wireframes
+
+[Balsamiq Wireframes](https://balsamiq.com/) was used to create all of the wireframes during the design phase of this site. These can be found [here]().
+
+##### back to [top](#table-of-contents)
+
+---
+
+## Features
+
+All required feature as detailed in the brief have been implemented, as well as several additional features that offer greater overall user experience.
+ 
+### Existing Features
+
+**Status-dependant Navbar**
+
+The options that a user will see displayed in the navbar are dependant on whether or not they are logged in.
+- Users that are not logged in will see:
+    - Bookable
+    - Search
+    - My Account (Register, Login)
+    - Shopping Basket
+- Users that are signed into the site will see:
+    - Bookable
+    - Search
+    - My Account (Product Management (superusers only), My Profile, Logout)
+    - Shopping Basket
+
+Admins will be able to access the admin panel by adding '/admin' at the end of the site's home page URL.
+
+**Create Account**
+
+Users are able to create their own user account. The code checks against existing users in the database to ensure that the selected username is unique, and that both the username and password meet the minimum/maximum length requirements. Once registered the user is directed to the home page to begin browsing the site.
+
+**User Profile Page**
+
+Upon registering or logging into the site, users are able to navigate to their profile page. Here they can choose to edit their profile information, including delivery address.
+
+**Logout**
+
+Users that have logged into the site may end their session at any time by clicking the 'Logout' button on the navbar. Django ends their session and redirects the user to the homepage.
+
+**Product Filtering**
+
+Users are able to filter the displayed products based on their type by using the dropdown menus at the top of the page.
+
+**Change password**
+
+Users that have forgotten their password upon logging in can change their password following the Forgotten Password link. They can then log in using the updated password.
+
+**Add to/View/Update/Remove from bag**
+
+Users have full CRUD functionality over their own shopping bag. They can add products to the basket via the product details page, view the shopping bag from the bag icon on the navbar, and update the bag's contents using the quantity selector/update buttons or the remove button.
+
+**Secure checkout**
+
+Users can check out once they are happy with their order. They need a valid card number to process an order. Stripe ensures the checkout process is done securely. The checkout page auto-populates with a user's given profile information. An email is sent to the user upon a successful transaction.
+
+**Sign up to newsletter**
+
+Anyone can sign up to the newsletter by entering their email on the home page and agreeing to the site's privacy policy. They do not need to be logged in or have an account.
+
+**Leave a review**
+
+Logged-in users can leave a review on products providing they agree to the site's review guidelines, via the product's details page.
+
+**Order Summary**
+
+The order summary is shown once successfully checked out and payment processed. Users can opt to navigate to the Deals section of the site if they wish.
+
+**Order History**
+
+Order History can be viewed at the bottom of a user's profile page. Each link directs the user to an order's summary page.
+
+### Features Left to Implement
+
+I wanted to implement account deletion but ran out of time to do this before the deadline.
+
+##### back to [top](#table-of-contents)
+
+---
+
+## Technologies Used
+
+- [Microsoft Visual Studio Code](https://code.visualstudio.com/) - Open source IDE from Microsoft that was used to code this project.
+- [GitHub](https://github.com/) - Remote repository for all project code with git version control.
+
+### Front-End Technologies
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - The fundamental code structure for all webpages.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - The fundamental stylesheet language for all webpages.
+- [JavaScript ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - The scripting language for webpages.
+- [jQuery 3.4.1](https://code.jquery.com/jquery/) - Javascript framework used to implement custom code and initialize Materialize functions.
+- [Bootstrap 4.4.1](https://getbootstrap.com/) - Primary visual model for this project.
+- [Stripe](https://stripe.com/docs/api?lang=python) - The Stripe API allows individuals and businesses to make and receive payments over the Internet.
+
+### Back-End Technologies
+
+- **Heroku**
+    - [Heroku](https://www.heroku.com) - Hosts the deployed version of this project.
+    - [Heroku Postgres](https://www.heroku.com/postgres) - PostgreSQL is one of the world's most popular relational database management systems.
+- **Python**
+    - [Python 3.8.11](https://www.python.org/) - Python is an interpreted, high-level, general-purpose programming language and is the language used for all backend functions of this project.
+    - [Django 3.2.13](https://www.djangoproject.com/) - Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+- **Amazon Web Services**
+    - [Amazon S3](https://aws.amazon.com/s3/) - Amazon Simple Storage Service is a service offered by Amazon Web Services that provides object storage through a web service interface. Amazon S3 uses the same scalable storage infrastructure that Amazon.com uses to run its global e-commerce network.
+    - [Amazon IAM](https://aws.amazon.com/iam) - Amazon Identity and Access Management (IAM) is a web service that helps securely control access to Amazon resources. IAM controls who is authenticated and authorised to use resources.
+
+##### back to [top](#table-of-contents)
+
+---
+
+## Testing
+
+Testing for this project has been completed using both automated and manual methods. 
+
+### Automated Testing
+
+Automated testing has been conducted using standard UnitTests in combination with the [Coverage.py](https://coverage.readthedocs.io/en/v4.5.x/) testing tool. In all, 23 tests were written covering 70% of all possible code. The remainder being for non-user boilerplate code generated by Django. All tests pass successfully.
+
+### Manual Testing
+
+Extensive manual testing has been completed to check that the site performs as it should in different environments and in different browsers.
+
+An MS Excel workbook detailing these tests can be found [here](https://github.com/10xOXR/2BN-Milestone-5/blob/master/man-test/page_tests.xlsx).
+
+### Validators
+
+**HTML**
+
+Passing the HTML from all templates and base into the [W3C Markup Validator](https://validator.w3.org/) generates numerous errors, but these are expected as the validator is unable to understand the Django templating that builds most aspects of the page. For the HTML that does not involve this templating, no errors have been found.
+
+**CSS**
+
+The CSS for the project has been generated by the Sass CSS extension language. Passing the generated CSS through the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) shows that there are no errors. A number of warnings are flagged, but these relate to MS-Grid vendor prefixes and can be safely ignored.
+
+**Javascript**
+
+All Javascript was passes throught the [Esprima Syntax Validator](http://esprima.org/demo/validate.html) and was found to be syntactically valid.
+
+**Python**
+
+All Python code was passed through the [PEP8 Online](http://pep8online.com/) validator and is fully PEP8 compliant.
+
+### Compatibility
+
+The project was tested to ensure full usability across the following browsers and their mobile equivalents (where applicable):
+
+- Chrome
+- Firefox
+- Edge (Chromium)
+
+##### back to [top](#table-of-contents)
+
+---
+
+## Deployment
+
+### Local Deployment
+
+Before you are able to deploy and run this application locally, you must have the following installed on your system:
+
+- [Python3](https://www.python.org/downloads) to run the application.
+- [PIP](https://pip.pypa.io/en/stable/installing) to install all app requirements.
+- An IDE of your choice, such as [Microsoft Visual Studio Code](https://code.visualstudio.com).
+- [GIT](https://www.atlassian.com/git/tutorials/install-git) for cloning and version control.
+
+Next, perform the following steps:
+
+Clone this GitHub repository by either clicking the green *Clone or download* button and downloading the project as a zip-file (remember to unzip it first), or by entering the following into the Git CLI terminal:
+    - `git clone https://github.com/carwynteifion/milestone-project-4-fsd.git`.
+- Navigate to the correct file location after unpacking the files.
+    - `cd <path to folder>`
+- Create a `.env` file containing the following environmental variables:
+    - ***STRIPE_PUBLIC_KEY*** - Used solely to identify your account with Stripe; it isn't secret.
+    - ***STRIPE_SECRET_KEY*** -  Can perform any API request to Stripe without restriction.
+    - ***SECRET_KEY*** - Standard secret key, any value.
+    - ***STRIPE_WH_SECRET*** - Secret key used for Stripe webhooks.
+    - ***AWS_ACCESS_KEY_ID*** - AWS user credentials.
+    - ***AWS_SECRET_ACCESS_KEY*** - AWS S3 credentials.
+    - ***EMAIL_HOST_USER*** - for sending emails through Gmail.
+    - ***EMAIL_HOST_PASS*** - this should be a Gmail-generated app password, must enable 2FA first.
+    - ***DATABASE_URL*** - Remote PostgreSQL database link if using a remote database.
+    - ***USE_AWS*** - set to 'True' to use AWS on deployed site.
+
+    You must create accounts with both Stripe and Amazon S3. Prior knowledge on how to configure a publicly accessible S3 Bucket and the Stripe API are assumed for this project, as detailed instructions are beyond the scope of this document.
+
+
+- Install all requirements from the [requirements.txt]() file using this command:
+    - `pip3 -r requirements.txt`
+
+- At the terminal prompt, type ```python manage.py runserver```. Django should now start running a development server from 'http://127.0.0.1:8000'. Copy and paste this address to your browser.
+
+    Running the project for the first time will caus Django to create a SQLite3 database named ```db.sqlite3```. Type the following command into the terminal to create the database schema:
+    - `python manage.py migrate`
+
+    Django will then migrate the files contained in the migrations folder to set up the following relational schema:
+
+    ![Relational Schema Diagram]( "RS Diagram")
+
+
+
+
+### Remote Deployment
+
+To implement this project on Heroku, the following must be completed:
+
+1. Create a **requirements.txt** file so Heroku can install the required dependencies to run the app.
+    - `pip3 freeze --local > requirements.txt`
+    - My file can be found [here]().
+2. Create a **Procfile** to tell Heroku what type of application is being deployed, and how to run it.
+    - `web: gunicorn bookable.wsgi:application`
+    - My file can be found [here]().
+3. Sign up for or log into your Heroku account, create your project app, and click the **Deploy** tab. Select *Connect GitHub* as the Deployment Method, and select *Enable Automatic Deployment*.
+4. In the Heroku **Settings** tab, click on the *Reveal Config Vars* button to configure environmental variables as in the local deployment above.
+5. In the **Resources** tab, go to the Add-ons section and add the Heroku Postgres add-on. Choose the *Hobby* level when prompted. This will give you a remote database to use for your project. The database URI will be located in the Config Vars in the **Settings** tab.
+6. The app will now be deployed and built by Heroku and will be ready to run.
+7. Alter your project's ```settings.py``` file to connect to the remote database using the ```dj_database_url``` Python package.
+8. Follow the steps in the Local Deployments section above to migrate your schema to the remote database.
+
+##### back to [top](#table-of-contents)
+
+---
+
+## Credits
+
+### Content
+
+
+
+### Media
+
+
+
+### Acknowledgements
+
+
+
+##### back to [top](#table-of-contents)
