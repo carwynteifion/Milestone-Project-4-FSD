@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, HttpResponse, get_object_or_404
+)
 
 from django.contrib import messages
 
@@ -29,20 +31,34 @@ def add_to_bag(request, item_id):
             if format in bag[item_id]['is_book'].keys():
                 bag[item_id]['is_book'][format] += quantity
                 messages.success(
-                    request, f'Updated format {format.upper()} {product.name} quantity to {bag[item_id]["is_book"][format]}', extra_tags='bag')
+                    request, (
+                        f'Updated format {format.upper()} {product.name} '
+                        f'quantity to {bag[item_id]["is_book"][format]}'
+                    ),
+                    extra_tags='bag'
+                )
             else:
                 bag[item_id]['is_book'][format] = quantity
                 messages.success(
-                    request, f'Added format {format.upper()} {product.name} to your bag', extra_tags='bag')
+                    request,
+                    f'Added format {format.upper()} {product.name} to the bag',
+                    extra_tags='bag'
+                )
         else:
             bag[item_id] = {'is_book': {format: quantity}}
             messages.success(
-                request, f'Added format {format.upper()} {product.name} to your bag', extra_tags='bag')
+                request,
+                f'Added format {format.upper()} {product.name} to the bag',
+                extra_tags='bag'
+            )
     else:
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
             messages.success(
-                request, f'Updated {product.name} quantity to {bag[item_id]}', extra_tags='bag')
+                request,
+                f'Updated {product.name} quantity to {bag[item_id]}',
+                extra_tags='bag'
+            )
         else:
             bag[item_id] = quantity
             messages.success(
@@ -66,23 +82,34 @@ def adjust_bag(request, item_id):
         if quantity > 0:
             bag[item_id]['is_book'][format] = quantity
             messages.success(
-                request, f'Updated format {format.upper()} {product.name} quantity to {bag[item_id]["is_book"][format]}', extra_tags='bag'
+                request, (
+                    f'Updated format {format.upper()} {product.name} '
+                    f'quantity to {bag[item_id]["is_book"][format]}'
+                ),
+                extra_tags='bag'
             )
         else:
             del bag[item_id]['is_book'][format]
             if not bag[item_id]['is_book']:
                 bag.pop(item_id)
             messages.success(
-                request, f'Removed format {format.upper()} {product.name} from your bag', extra_tags='bag')
+                request,
+                f'Removed format {format.upper()} {product.name} from the bag',
+                extra_tags='bag'
+            )
     else:
         if quantity > 0:
             bag[item_id] = quantity
             messages.success(
-                request, f'Updated {product.name} quantity to {bag[item_id]}', extra_tags='bag')
+                request, f'Updated {product.name} quantity to {bag[item_id]}',
+                extra_tags='bag'
+            )
         else:
             bag.pop(item_id)
             messages.success(
-                request, f'Removed {product.name} from your bag', extra_tags='bag')
+                request, f'Removed {product.name} from your bag',
+                extra_tags='bag'
+            )
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
@@ -103,11 +130,16 @@ def remove_from_bag(request, item_id):
             if not bag[item_id]['is_book']:
                 bag.pop(item_id)
             messages.success(
-                request, f'Removed format {format.upper()} {product.name} from your bag', extra_tags='bag')
+                request,
+                f'Removed format {format.upper()} {product.name} from the bag',
+                extra_tags='bag'
+            )
         else:
             bag.pop(item_id)
             messages.success(
-                request, f'Removed {product.name} from your bag', extra_tags='bag')
+                request,
+                f'Removed {product.name} from your bag', extra_tags='bag'
+            )
 
         request.session['bag'] = bag
         return HttpResponse(status=200)

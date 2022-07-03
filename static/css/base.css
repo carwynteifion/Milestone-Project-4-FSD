@@ -139,6 +139,11 @@ input[name='q']::placeholder {
     word-break: break-word;
 }
 
+.error-container {
+    background-color: white;
+    color:#000;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .bag-toast {
@@ -157,6 +162,7 @@ input[name='q']::placeholder {
 
 .custom-toast {
     overflow: visible;
+    z-index: 99999999999;
 }
 
 .toast-capper {
