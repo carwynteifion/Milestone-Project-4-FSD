@@ -1,0 +1,4 @@
+<p class="my-0"><strong>{{ item.product.name }}</strong></p>
+<p class="my-0"><strong>Format: </strong>{% if item.product.is_book %}{{ item.format|upper }}{% else %}N/A{% endif %}
+</p>
+<p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>

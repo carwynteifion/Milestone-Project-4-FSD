@@ -1,0 +1,35 @@
+<form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
+    {% csrf_token %}
+    <div class="form-group">
+        <div class="input-group input-group-{{ item.item_id }}">
+            <div class="input-group-prepend">
+                <button class="decrement-qty btn btn-sm btn-black rounded-0 decrement-qty_{{ item.item_id }} 
+                    {% if item.format %}decrement-format_{{ item.item_id }}_{{ item.format }}{% endif %}"
+                    data-item_id="{{ item.item_id }}" data-format="{{ item.format }}">
+                    <span>
+                        <i class="fas fa-minus fa-sm"></i>
+                    </span>
+                </button>
+            </div>
+            <input class="form-control form-control-sm qty_input id_qty_{{ item.item_id }} 
+                {% if item.format %}format_{{ item.item_id }}_{{ item.format }}{% endif %}" type="number"
+                name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}"
+                data-format="{{ item.format }}">
+            <div class="input-group-append">
+                <button class="increment-qty btn btn-sm btn-black rounded-0 increment-qty_{{ item.item_id }} 
+                    {% if item.format %}increment-format_{{ item.item_id }}_{{ item.format }}{% endif %}"
+                    data-item_id="{{ item.item_id }}" data-format="{{ item.format }}">
+                    <span>
+                        <i class="fas fa-plus fa-sm"></i>
+                    </span>
+                </button>
+            </div>
+            {% if item.product.is_book %}
+                <input type="hidden" name="product_format" value="{{ item.format }}">
+            {% endif %}
+        </div>
+    </div>
+</form>
+<a class="update-link text-info"><small>Update</small></a>
+<a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"
+    data-product_format="{{ item.format }}"><small>Remove</small></a>
