@@ -255,6 +255,10 @@ input[name='q']::placeholder {
     }
 
     .bookable-icon {
+        font-size: 1.3rem;
+    }
+
+    .mobile-icons {
         font-size: 1rem;
     }
 }
