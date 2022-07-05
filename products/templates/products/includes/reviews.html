@@ -17,7 +17,7 @@
             {% csrf_token %}
             <textarea name="comment" id="comment" class="form-control" rows="5" placeholder="Comment..."></textarea>
             <br>
-            <label for="review-privacy">I accept the site's review guidelines</label>
+            <label for="review-privacy">Send me marketing emails!</label>
             <input type="checkbox" name="review-privacy" id="review-privacy">
             <input type="hidden" name="redirect_url" value="{{ request.path }}">
             <br>
