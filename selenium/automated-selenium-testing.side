@@ -1051,7 +1051,7 @@
         ["xpath=//div[@id='div_id_password1']/div/input", "xpath:idRelative"],
         ["xpath=//div[4]/div/input", "xpath:position"]
       ],
-      "value": "testpassword"
+      "value": os.environ.get("TEST_USER_PASSWORD")
     }, {
       "id": "53137418-de1a-4e88-ba63-281b2e6a0b73",
       "comment": "",
@@ -1065,7 +1065,7 @@
         ["xpath=//div[@id='div_id_password2']/div/input", "xpath:idRelative"],
         ["xpath=//div[5]/div/input", "xpath:position"]
       ],
-      "value": "testpassword"
+      "value": os.environ.get("TEST_USER_PASSWORD")
     }, {
       "id": "f7e5547e-9cc2-470a-862b-8f96d7b44840",
       "comment": "",
@@ -1184,7 +1184,7 @@
         ["xpath=//div[@id='div_id_password']/div/input", "xpath:idRelative"],
         ["xpath=//div[2]/div/input", "xpath:position"]
       ],
-      "value": "testpassword"
+      "value": os.environ.get("TEST_USER_PASSWORD")
     }, {
       "id": "2670ab29-a4aa-4756-8f98-91c83d2d2c36",
       "comment": "",
@@ -1682,7 +1682,7 @@
         ["xpath=//div[@id='div_id_password']/div/input", "xpath:idRelative"],
         ["xpath=//div[2]/div/input", "xpath:position"]
       ],
-      "value": "testpassword"
+      "value": os.environ.get("TEST_USER_PASSWORD")
     }, {
       "id": "96982359-7d97-49c4-a759-df1631cf543a",
       "comment": "",
