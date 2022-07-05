@@ -88,7 +88,7 @@ The primary fonts used on the site are those provided by the Bootstrap framework
 
 ### Wireframes
 
-[Balsamiq Wireframes](https://balsamiq.com/) was used to create all of the wireframes during the design phase of this site. These can be found [here]().
+[Balsamiq Wireframes](https://balsamiq.com/) was used to create all of the wireframes during the design phase of this site. These can be found [here](https://github.com/carwynteifion/Milestone-Project-4-FSD/blob/main/media/wireframes).
 
 ##### back to [top](#table-of-contents)
 
@@ -206,7 +206,7 @@ Testing for this project has been completed using both automated and manual meth
 
 ### Automated Testing
 
-Automated testing was conducted using Selenium 3.0 and Pytest. Tests were constructed based on user stories and real-world usage of the site. The test code can be found [here](https://github.com/carwynteifion/Milestone-Project-4-FSD/blob/main/selenium) where it is also available as a .side file to use within Selenium. This can be downloaded as a Chrome extension [here](chrome://extensions/?id=mooikfkahbdckldjjndioackbalphokd) and as a Firefox add-on [here](https://addons.mozilla.org/en-GB/firefox/addon/selenium-ide/).
+Automated testing was conducted using Selenium 3.0 and Pytest. Tests were constructed based on user stories and real-world usage of the site. The test code can be found [here](https://github.com/carwynteifion/Milestone-Project-4-FSD/blob/main/selenium) where it is also available as a .side file to use within Selenium. This can be downloaded as a Chrome extension [here](chrome://extensions/?id=mooikfkahbdckldjjndioackbalphokd) and as a Firefox add-on [here](https://addons.mozilla.org/en-GB/firefox/addon/selenium-ide/). Tests passed in Selenium as seen [here](/https://github.com/carwynteifion/Milestone-Project-4-FSD/blob/main/selenium/test_results.PNG).
 
 ### Manual Testing
 
