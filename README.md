@@ -174,6 +174,8 @@ There is also a bug where some toasts do not display as expected, created after 
 
 - [Microsoft Visual Studio Code](https://code.visualstudio.com/) - Open source IDE from Microsoft that was used to code this project.
 - [GitHub](https://github.com/) - Remote repository for all project code with git version control.
+- [Selenium IDE](https://www.selenium.dev/documentation/ide/) - used to record testing steps
+- [Pytest](https://docs.pytest.org/en/7.1.x/) - used for automatic testing
 
 ### Front-End Technologies
 
