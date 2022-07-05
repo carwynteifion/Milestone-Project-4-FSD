@@ -206,7 +206,7 @@ Testing for this project has been completed using both automated and manual meth
 
 ### Automated Testing
 
-
+Automated testing was conducted using Selenium 3.0 and Pytest. Tests were constructed based on user stories and real-world usage of the site. The test code can be found [here](https://github.com/carwynteifion/Milestone-Project-4-FSD/blob/main/selenium) where it is also available as a .side file to use within Selenium. This can be downloaded as a Chrome extension [here](chrome://extensions/?id=mooikfkahbdckldjjndioackbalphokd) and as a Firefox add-on [here](https://addons.mozilla.org/en-GB/firefox/addon/selenium-ide/).
 
 ### Manual Testing
 
