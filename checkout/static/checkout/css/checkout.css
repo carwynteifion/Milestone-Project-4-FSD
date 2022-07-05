@@ -64,3 +64,8 @@ select option[value=""] {
     margin: 0;
     height: 100%;
 }
+
+.order-confirmation-wrapper {
+    word-wrap: break-word;
+    word-break: break-word;
+}

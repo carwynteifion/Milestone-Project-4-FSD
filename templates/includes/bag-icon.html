@@ -13,8 +13,8 @@
         </div>
         {% if messages %}
             {% for message in messages %}
-                {% if "bag" in message.tags %}
-                    <div class="bag-toast">
+                {% if "bag" or "checkout" in message.tags %}
+                    <div class="bag-toast text-black">
                         {% include './toasts/toast.html' %}
                     </div>
                 {% endif %}
