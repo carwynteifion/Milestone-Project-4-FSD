@@ -164,6 +164,8 @@ Order History can be viewed at the bottom of a user's profile page. Each link di
 
 I wanted to implement account deletion and further improve the site's UI/UX but ran out of time to do this before the deadline.
 
+There is also a bug where some toasts do not display as expected, created after I customised where toasts could appear on the page; again I would have wanted to fix this if I had time.
+
 ##### back to [top](#table-of-contents)
 
 ---
