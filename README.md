@@ -1,6 +1,6 @@
 #   [Bookable](https://milestone-project-4-fsd.herokuapp.com/)
 
-Desktop, Mobile and Tablet screenshots [here](https://github.com/carwynteifion/blob/main/media/readme_files/screenshots/)
+Desktop, Mobile and Tablet screenshots [here](https://github.com/carwynteifion/Milestone-Project-4-FSD/tree/main/media/readme_files/screenshots)
 
 Bookable is an online bookstore selling both fiction and non-fiction books in paperback and hardback formats at competitive prices. It offers deals, sales and clearance events. It also sells other products such as e-readers, as well as their world-renowned pink bookmarks!
 
